@@ -154,9 +154,9 @@
 				</div>
 			</section>
 			<!-- can't find the real size when using flex so it's not a real px-[72px]-->
-			<section class="course bg-gray-200 px-[72px] py-8">
+			<section class="course bg-green-100">
 				<!-- Desktop -->
-				<div class="flex flex-col items-center">
+				<div class="md:flex hidden flex-col items-center px-[72px] py-8">
 					<p class="text-gray-700 text-4xl font-bold mb-8">Start Learning</p>
 					<div class="flex gap-8 flex-wrap justify-center">
 						<a class="bg-slate-50 w-[400px]" href="#">
@@ -209,10 +209,20 @@
 						</a>
 					</div>
 				</div>
+				<!-- Mobile -->
+				<div class="md:hidden flex flex-col items-center gap-2 mx-4 mb-8">
+					<a class="text-gray-700 text-4xl font-bold mb-4 mt-8" href="#">Start Learning</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Software engineering</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Computer art</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Design</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Data</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Business</a>
+					<a class="bg-slate-200 w-full pt-4 pb-6 px-4" href="#">Marketing</a>
+				</div>
 			</section>
 			<section class="thesis">
-				<div class="">
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, atque saepe. Dolorum sint, eveniet a doloremque natus mollitia vero officia, consequatur quae corrupti ipsa hic voluptates omnis animi error harum.</p>
+				<div class="md:flex hidden flex-col items-center py-8">
+					<p class="text-gray-700 text-4xl font-bold mb-8">Thesis exihibits</p>
 				</div>
 			</section>
 		</main>
