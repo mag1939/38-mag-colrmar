@@ -27,13 +27,12 @@
 	<body class="w-screen min-h-dvh">
 		<header class="h-16 bg-white">
 			<nav>
-				<!-- display -->
-				<ul class="hidden md:flex h-16 gap-4 px-6 items-center">
+				<!-- Desktop -->
+				<ul class="hidden md:flex h-16 gap-4 mx-6 items-center">
 					<li class="nav-item h-8 mr-auto">
 						<a href="#" class="flex items-center">
 							<img src="/images/ic-logo.svg" alt="logo">
-							<b class="text-gray-600">COLMAR</b>
-							<span class="text-gray-400">ACADEMY</span>
+							<b class="text-gray-600">COLMAR</b><span class="text-gray-400">ACADEMY</span>
 						</a>
 					</li>
 					<li class="nav-item text-gray-600"><a href="#">On campus</a></li>
@@ -41,7 +40,7 @@
 					<li class="nav-item text-gray-600"><a href="#">For companies</a></li>
 					<li class="nav-item text-gray-600"><a href="#">Sign in</a></li>
 				</ul>
-				<!-- mobile -->
+				<!-- Mobile -->
 				<ul class="md:hidden flex h-16 gap-4 px-6 items-center">
 					<li class="nav-item h-8 mx-auto">
 						<a href="#" class="flex items-center">
@@ -67,7 +66,8 @@
 		</header>
 		<main class="grid grid-cols-[auto auto auto auto]">
 			<section class="hero bg-gray-300">
-				<div class="flex px-6 py-8 gap-6">
+				<!-- Desktop -->
+				<div class="hidden md:flex px-6 py-8 gap-6">
 					<div class="basis-3/5">
 						<img src="/images/banner.jpg" alt="banner">
 					</div>
@@ -77,10 +77,39 @@
 							<a href="#" class="text-gray-200 bg-gray-700 p-2 text-center">Start here</a>
 					</div>
 				</div>
+				<!-- Mobile -->
+				<div class="md:hidden flex px-6 py-8 gap-6">
+					<!-- <div class="basis-3/5">
+						<img src="/images/banner.jpg" alt="banner">
+					</div>
+					<div class="basis-2/5 flex flex-col gap-10 justify-center content-start pr-30">
+							<p class="text-gray-700 text-5xl font-semibold">Learn something new everyday</p>
+							<p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<a href="#" class="text-gray-200 bg-gray-700 p-2 text-center">Start here</a>
+					</div> -->
+				</div>
 			</section>
 			<section class="information">
-				<div class="">
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, atque saepe. Dolorum sint, eveniet a doloremque natus mollitia vero officia, consequatur quae corrupti ipsa hic voluptates omnis animi error harum.</p>
+				<div class="flex px-6 py-8 gap-6">
+					<div class="basis-3/5 flex flex-col gap-10">
+						<img src="/images/information-main.jpg" alt="banner">
+						<div>
+							<p>It doesn't hurt to keep practicing</p>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis assumenda quis aliquam nemo animi harum deserunt quod? Incidunt rerum eos a ullam. Suscipit repellat nostrum error nesciunt at. Maxime, qui.</p>
+							<p>Emanuel, Sr Strategist at Hiring.com</p>
+						</div>
+					</div>
+					<div class="basis-2/5 flex flex-col">
+						<div>
+							<img src="/images/information-orientation.jpg" alt="info-orientation">
+						</div>
+						<div>
+							<img src="/images/information-campus.jpg" alt="info-campus">
+						</div>
+						<div>
+							<img src="/images/information-guest-lecture.jpg" alt="guest">
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="course bg-gray-200">
@@ -96,8 +125,7 @@
 		</main>
 		<footer class="h-16 bg-white">
 			<div class="flex justify-between pt-4 px-6 text-gray-400">
-				<span class="">© 2016 Colmar Academy. All rights reserved</span>
-				<span class="">Terms Privacy</span>
+				<span class="">© 2016 Colmar Academy. All rights reserved</span><span class="">Terms Privacy</span>
 			</div>
 		</footer>
 	</body>
